@@ -1,3 +1,3 @@
-module github.com/Seeweb/cloudserver-go-client
+module github.com/marco2002panella/cloudserver-go-client
 
 go 1.18
