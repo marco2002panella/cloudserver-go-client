@@ -210,10 +210,6 @@ func (c *Client) do(req *http.Request, v interface{}) (*Response, error) {
 		WriteLog("log_RESPONSES_log.txt", respLog)
 	}
 
-	if err := c.checkResponse(response); err != nil {
-		return response, err
-	}
-
 	if v != nil {
 		if err := c.DecodeJSON(response, v); err != nil {
 			return response, err
